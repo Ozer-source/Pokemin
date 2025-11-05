@@ -1,20 +1,19 @@
-import { useState } from 'react'
-import '../App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './Css/home.css';
 
-// import Home from './Pages/home'
-import List from '../Pages/list'
-import Details from '../Pages/detail'
 
 function Home() {
-
   return (
-    <>
-      <h1>Home</h1>
-        <a href="/List">List</a><br />
-        <a href="/Details/1">Details</a>
-    </>
-  )
+    <div className="home-container">
+      <h1>Welcome to the PokeApp</h1>
+      <p>Explore your Pokémon list or see details of your favorite Pokémon.</p>
+
+      <div className="home-buttons">
+        <Link className="home-link" to="/List">Go to List</Link>
+        <Link className="home-link" to="/Details/1">See Details</Link>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

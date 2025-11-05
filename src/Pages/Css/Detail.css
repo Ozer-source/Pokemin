@@ -1,0 +1,72 @@
+[class$="-container"] {
+    background-color: #5D7085;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 5px;
+}
+[class$="-list"] {
+    background-color: #5D7085;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 5px;
+}
+
+.detail-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sprites-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sprite-item {
+    text-align: center;
+}
+
+.sprite-img {
+    width: 80px;
+}
+
+.sprite-label {
+    font-size: 12px;
+}
+
+.info-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.moves-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.moves_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+}

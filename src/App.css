@@ -1,0 +1,261 @@
+/* ---------------------------------- */
+/* Algemene body styling */
+/* ---------------------------------- */
+html,
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #444D51;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Buttons algemeen */
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* Bestaande componenten (ongewijzigd) */
+/* ---------------------------------- */
+.box {
+    padding-top: 50px;
+    width: 230px;
+    height: fit-content;
+    background-color: #5D7085;
+    color: black;
+    justify-items: center;
+    border-radius: 14px;
+    scrollbar-width: none;
+}
+
+.ImgBox {
+    user-select: none;
+    background-color: #4F89C8;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.img {
+    width: '1000px';
+    height: '1000px';
+    object-fit: contain;
+}
+
+a {
+    color: black;
+    background-color: #4F89C8;
+    margin-top: 70px;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.Details {
+    background-color: #5D7085;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.PokeButton {
+    width: 150px;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.Button {
+    background-color: #4F89C8;
+    margin: 5px;
+    border-radius: 24px;
+    border: none;
+}
+
+.Button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.ImgBox:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.TeamDiv {
+    margin-top: 20px;
+}
+
+.TeamInput {
+    margin-right: 8px;
+    padding: 4px;
+}
+
+.FavoButton {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -10px;
+    right: -30px;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.FavoButton.active {
+    background-color: gold;
+}
+
+.FavoButton.inactive {
+    background-color: gray;
+}
+
+/* ---------------------------------- */
+/* Nieuwe componenten die erbij passen */
+/* ---------------------------------- */
+
+/* Home container / pagina */
+.home-container {
+    text-align: center;
+    background-color: #5D7085;
+    padding: 40px 30px;
+    border-radius: 14px; /* sluit aan bij .box */
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    width: 300px;
+}
+
+.home-container h1 {
+    margin-bottom: 15px;
+    color: #F5F5F5;
+}
+
+.home-container p {
+    margin-bottom: 25px;
+    color: #E0E0E0;
+}
+
+/* Home buttons */
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.home-link {
+    display: block;
+    background-color: #4F89C8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 24px; /* sluit aan bij a */
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.home-footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Details pagina elementen */
+.detail-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #5D7085;
+    border-radius: 14px;
+    color: black;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sprites-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sprite-item {
+    text-align: center;
+}
+
+.sprite-img {
+    width: 80px;
+}
+
+.sprite-label {
+    font-size: 12px;
+}
+
+.info-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.moves-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.moves_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Delete / Remove buttons */
+.RemoveButton {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.DeleteButton {
+    font-size: 12px;
+    margin-left: 8px;
+    color: white;
+    background: red;
+    border-radius: 4px;
+    padding: 2px 6px;
+}

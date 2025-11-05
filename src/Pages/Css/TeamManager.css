@@ -1,0 +1,25 @@
+.RemoveButton {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.DeleteButton {
+    font-size: 12px;
+    margin-left: 8px;
+    color: white;
+    background: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 2px 6px;
+}

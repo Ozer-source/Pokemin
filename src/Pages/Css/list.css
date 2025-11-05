@@ -1,0 +1,112 @@
+html,
+body {
+    display: flexbox;
+    justify-content: center;
+    background-color: #444D51;
+}
+
+button {
+    border: 0;
+}
+
+.box {
+    padding-top: 50px;
+    width: 230px;
+    height: fit-content;
+    background-color: #5D7085;
+    color: black;
+    justify-items: center;
+    border-radius: 14px;
+    scrollbar-width: none;
+}
+
+.ImgBox {
+    user-select: none;
+    background-color: #4F89C8;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.img {
+    width: '1000px';
+    height: '1000px';
+    object-fit: contain;
+}
+
+a {
+    color: black;
+    background-color: #4F89C8;
+    margin-top: 70px;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.Details {
+    background-color: #5D7085;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.PokeButton {
+    width: 150px;
+    padding: 10px;
+    border-radius: 14px;
+
+}
+
+.Button {
+    background-color: #4F89C8;
+    margin: 5px;
+    border-radius: 24px;
+    border: none;
+}
+
+
+.Button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.ImgBox:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+
+}
+
+.TeamDiv {
+    margin-top: 20px;
+}
+
+.TeamInput {
+    margin-right: 8px;
+    padding: 4px;
+}
+
+.FavoButton {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -10px;
+    right: -30px;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.FavoButton.active {
+    background-color: gold;
+}
+
+.FavoButton.inactive {
+    background-color: gray;
+}
