@@ -140,7 +140,7 @@ function List() {
                                             ★
                                         </button>
                                     </div>
-                                    <a href={`/Details/${id}`} className="d-block PokeButton mb-2">{name}</a>
+                                    <a href={`#/Details/${id}`} className="d-block PokeButton mb-2">{name}</a>
 
                                     {/* Knoppen voor elk team */}
                                     {teams.map((team, teamIndex) => (
